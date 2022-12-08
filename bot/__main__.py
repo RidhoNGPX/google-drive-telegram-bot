@@ -1,5 +1,6 @@
 import os
 import logging
+from plugins import *
 from pyrogram import Client, idle
 from bot import (
   APP_ID,
@@ -19,8 +20,6 @@ logging.getLogger("pyrogram").setLevel(logging.WARNING)
 if __name__ == "__main__":
     if not os.path.isdir(DOWNLOAD_DIRECTORY):
         os.makedirs(DOWNLOAD_DIRECTORY)
-    plugins = dict(
-        root="bot/plugins"
     )
     app = Client(
         "G-DriveBot",
