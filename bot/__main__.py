@@ -1,6 +1,6 @@
 import os
 import logging
-from pyrogram import Client
+from pyrogram import Client, idle
 from bot import (
   APP_ID,
   API_HASH,
@@ -27,10 +27,8 @@ if __name__ == "__main__":
         bot_token=BOT_TOKEN,
         api_id=APP_ID,
         api_hash=API_HASH,
-        plugins=plugins,
-        parse_mode="markdown",
-        workdir=DOWNLOAD_DIRECTORY
     )
     LOGGER.info('Starting Bot !')
-    app.run()
+    app.start()
+    idle()
     LOGGER.info('Bot Stopped !')
