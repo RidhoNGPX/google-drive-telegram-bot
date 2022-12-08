@@ -20,7 +20,7 @@ logging.getLogger("pyrogram").setLevel(logging.WARNING)
 if __name__ == "__main__":
     if not os.path.isdir(DOWNLOAD_DIRECTORY):
         os.makedirs(DOWNLOAD_DIRECTORY)
-    )
+
     app = Client(
         "G-DriveBot",
         bot_token=BOT_TOKEN,
