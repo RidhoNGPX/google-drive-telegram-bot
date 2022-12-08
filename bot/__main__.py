@@ -1,6 +1,6 @@
 import os
 import logging
-from plugins import *
+from bot.plugins import *
 from pyrogram import Client, idle
 from bot import (
   APP_ID,
